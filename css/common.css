@@ -1,0 +1,577 @@
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: #000
+}
+
+.bgImg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.anim,
+.anim svg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.anim path {
+    stroke-width: 2;
+}
+
+.container {
+    overflow: hidden;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+}
+
+.des-title {
+    /* color: #00e1eb; */
+    color: #fff;
+    font-size: 2.1em;
+    font-weight: 600;
+    letter-spacing: .5em;
+    z-index: 99;
+    margin-left: 15%;
+    margin-top: 23%;
+    margin-bottom: 1em;
+}
+
+.loginBox {
+    width: 36em;
+    height: 23em;
+    /* border: 2px solid #07659c; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background: rgba(7, 51, 76, 0.1); */
+    position: relative;
+    z-index: 9999
+}
+
+.leftTop {
+    width: 2em;
+    position: absolute;
+    left: 0;
+}
+
+.leftBottom {
+    width: 2em;
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+.rightBottom {
+    width: 2em;
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.rightTop {
+    width: 2em;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.loginTitle {
+    font-size: 1.5em;
+    color: #00e1eb;
+    margin: 1.5em 0;
+}
+
+.formBox {
+    width: 100%;
+    display: flex;
+    margin-left: 69%
+}
+
+.inputBox {
+    /* width: 80%; */
+    width: 30%;
+    margin-left: 3%;
+    /* margin-left: 10%; */
+    position: relative;
+}
+
+.inputBox input {
+    width: 100%;
+    margin-left: 3%;
+    /* width: 100%; */
+    /* border: 1px solid #066aa3; */
+    padding: .4em;
+    font-size: 1.2em;
+    margin-bottom: 1.1em;
+    /* background: rgba(3, 69, 107); */
+    color: #bfcfd9;
+    border: none;
+    border-radius: .3em;
+    padding-left: 2em
+}
+
+.inputImg {
+    position: absolute;
+    left: .8em;
+    width: 1.2em;
+    z-index: 999;
+    top: .5em;
+}
+
+.inputBox input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #bfcfd9;
+}
+
+.inputBox input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #bfcfd9;
+}
+
+.inputBox input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #bfcfd9;
+}
+
+.inputBox input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #bfcfd9;
+}
+
+.login-other {
+    width: 80%;
+    margin: 0 10%;
+    margin-left: 80%
+}
+
+.login-Deal {
+    display: inline-block;
+    width: 50%;
+    color: #fafbfb;
+    position: relative;
+    padding-left: 1.6em
+}
+.remPwd {
+    position: absolute;
+    left: 66%;
+    top: -.3em;
+    width: 1.5em;
+    height: 1.5em;
+}
+.text-right {
+    text-align: right
+}
+
+.loginBtn {
+    /* margin-top: 1em; */
+    width: 30%;
+    margin-left: 3%;
+    text-align: center;
+    height: 2em;
+    line-height: 2em;
+    font-size: 1.3em;
+    background: #03456B;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: .3em;
+}
+
+.debufWidth {
+    width: 48%
+}
+
+.blue {
+    position: absolute;
+    bottom: 20em;
+    left: 0;
+    display: flex;
+}
+
+.blue1 {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+.blue .blue-ele,
+.blue1 .blue-ele {
+    background: #00f6ff;
+    width: .8em;
+    height: .6em;
+    margin-right: .5em
+}
+
+#blue {
+    bottom: 18em
+}
+
+#blue1 {
+    bottom: 15em
+}
+
+#blue2 {
+    bottom: 12em;
+}
+
+#blue3 {
+    bottom: 6em
+}
+
+#blue4 {
+    bottom: 4em
+}
+
+#blue5 {
+    top: 20em;
+    right: 0
+}
+
+#blue6 {
+    top: 18em;
+    right: 0;
+}
+
+#blue7 {
+    bottom: 18em;
+    right: 0;
+}
+
+#blue8 {
+    bottom: 15em;
+    right: 0;
+}
+
+#blue9 {
+    bottom: 12em;
+    right: 0;
+}
+
+#blue10 {
+    bottom: 8em;
+    right: 0;
+}
+.allrow {
+    position: absolute;
+    top:30%;
+    z-index: 9999999;
+}
+.allrow1 {
+    position: absolute;
+    top:-25%;
+    z-index: 9999999;
+}
+.leftRow {
+    /* color: rgba(13,192,250,0.4); */
+    /* font-size: 2em; */
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid rgba(13,192,250,0.4);
+    border-right: 2px solid rgba(13,192,250,0.4);
+    transform: rotate(45deg);
+    display: inline-block
+}
+.svgPo_2 {
+    /* transform: rotate(180deg); */
+    left: 47%;;
+    top: 38%;;
+}
+.svgPo_1 {
+    position: absolute;
+    left: 47%;
+    top: 55%;
+}
+.svgPo1 {
+    /*20%  15em 0.75*/
+    position: absolute;
+    left: -10px;
+    top: 15em;
+}
+
+.svgPo2 {
+    position: absolute;
+    left: -10px;
+    top: 15.75em;
+}
+
+.svgPo3 {
+    position: absolute;
+    left: -10px;
+    top: 16.5em;
+}
+
+.svgPo4 {
+    position: absolute;
+    left: -10px;
+    top: 17.25em;
+}
+
+.svgPo5 {
+    position: absolute;
+    left: -10px;
+    top: 24em;
+}
+
+.svgPo6 {
+    position: absolute;
+    left: -10px;
+    top: 24.75em;
+}
+
+.svgPo7 {
+    position: absolute;
+    left: -10px;
+    top: 25.5em;
+}
+
+.svgPo8 {
+    position: absolute;
+    left: -10px;
+    top: 26.25em;
+}
+
+.svgPo9 {
+    position: absolute;
+    left: 180px;
+    top: 22.5em;
+}
+
+.svgPo10 {
+    position: absolute;
+    left: 195px;
+    top: 22.5em;
+}
+
+.svgPo11 {
+    position: absolute;
+    left: 18em;
+    top: 18em;
+}
+
+.svgPo12 {
+    position: absolute;
+    left: 19.5em;
+    top: 18em;
+}
+
+.svgPo13 {
+    position: absolute;
+    left: 21em;
+    top: 18em;
+}
+
+.svgPo14 {
+    position: absolute;
+    left: 22.5em;
+    top: 18em;
+}
+
+.svgPo15 {
+    position: absolute;
+    left: 30.5em;
+    top: 20em;
+}
+
+.svgPo16 {
+    position: absolute;
+    left: 32em;
+    top: 22em;
+}
+
+.svgPo17 {
+    position: absolute;
+    left: 33em;
+    top: 22.5em;
+}
+
+.svgPo18 {
+    position: absolute;
+    left: 13em;
+    top: 38.5em;
+}
+
+.svgPo19 {
+    position: absolute;
+    left: 15.5em;
+    top: 39.5em;
+}
+
+.svgPo20 {
+    position: absolute;
+    left: 16.5em;
+    top: 40.5em;
+}
+
+.svgPo21 {
+    position: absolute;
+    left: 16em;
+    top: 38.5em;
+}
+
+.svgPo22 {
+    position: absolute;
+    left: 5em;
+    top: 45.5em;
+}
+
+.svgPo23 {
+    position: absolute;
+    left: 5em;
+    top: 45.5em;
+}
+
+svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99
+}
+
+path {
+    stroke-width: 2;
+    text-shadow: 5px 5px 5px #7FFFD4
+}
+
+.worth {
+    position: absolute;
+    z-index: 99999999;
+    width: 1000px;
+    bottom: -800px;
+}
+.worthBorder {
+    position: absolute;
+    z-index: 99999999;
+    width: 1000px;
+    bottom: -250px;
+}
+.roateBox {
+    position: absolute;
+    right: 0;
+    transform: rotate(180deg);
+    z-index: 999999;
+    width: 200px;
+    height: 200px;
+    top: 70%;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.Rotation {
+    -webkit-transform: rotate(360deg);
+    animation: rotation 10s linear infinite;
+    -moz-animation: rotation 10s linear infinite;
+    -webkit-animation: rotation 10s linear infinite;
+    -o-animation: rotation 10s linear infinite;
+}
+
+.btnLine {
+    background-image: linear-gradient(90deg, rgba(237, 240, 244, 0.00) 11%, #EEF1F5 35%, #EEF1F5 64%, rgba(238, 241, 243, 0.00) 86%);
+    width: 290px;
+    height: 1px;
+    position: absolute;
+    top: 10%;
+    z-index: 99999999999
+}
+
+.line {
+    position: absolute;
+    top: 10%;
+    z-index: 99999999999;
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0) 10%,
+            rgba(255, 255, 255, 0.3) 20%,
+            rgba(255, 255, 255, 0.4) 30%,
+            rgba(255, 255, 255, 0.5) 40%,
+            rgba(255, 255, 255, 0.8) 50%,
+            rgba(255, 255, 255, 0.5) 60%,
+            rgba(255, 255, 255, 0.4) 70%,
+            rgba(255, 255, 255, 0.3) 80%,
+            rgba(0, 0, 0, 0) 90%,
+            rgba(0, 0, 0, 0) 100%);
+    /* Safari and Chrome */
+    -webkit-animation-name: breath;
+    /* 动画名称 */
+    -webkit-animation-duration: 3s;
+    /* 动画时长3秒 */
+    -webkit-animation-timing-function: ease-in-out;
+    /* 动画速度曲线：以低速开始和结束 */
+    -webkit-animation-iteration-count: infinite;
+    /* 播放次数：无限 */
+
+}
+
+@keyframes breath {
+    from {
+        opacity: 0.3;
+    }
+
+    /* 动画开始时的不透明度 */
+    50% {
+        opacity: 1;
+    }
+
+    /* 动画50% 时的不透明度 */
+    to {
+        opacity: 0.3;
+    }
+
+    /* 动画结束时的不透明度 */
+}
+
+@-webkit-keyframes breath {
+    from {
+        opacity: 0.3;
+    }
+
+    /* 动画开始时的不透明度 */
+    50% {
+        opacity: 1;
+    }
+
+    /* 动画50% 时的不透明度 */
+    to {
+        opacity: 0.3;
+    }
+
+    /* 动画结束时的不透明度 */
+}
+
+
+#myDiv {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+    -moz-transform: rotate3d(0, 1, 0, 360deg);
+    transform: rotate3d(0, 1, 0, 360deg);
+    transition: -webkit-transform 0.8s ease-in-out;
+    transition: -moz-transform 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out;
+
+}
+

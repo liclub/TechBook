@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta id="viewport" name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/commons2.css?v=199402051">
+</head>
+
+<body>
+    <img class="bgImg" style="top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    height: 6.5em;" src="images/title-2.png">
+    <img class="bgImg" src="images/bg-2.png">
+    <div class="container">
+        <div class="solidDiv">
+            <div class="boxPoint" id="point1"></div>
+            <img class="kuang" src="images/kuang.png">
+            <div class="title">重点人员</div>
+            <div class="flexbox">
+                <div class="box-area">
+                    <img class="borderBox" src="images/border2.png" alt="">
+                    <img src="images/bg1.png" class="headImg">
+                    <div class="boxText">张三</div>
+                    <div class="boxText">3215212</div>
+                    <div class="boxText">xx戒毒所</div>
+                </div>
+                <div class="box-area">
+                    <img src="images/border2.png" class="borderBox">
+                    <img src="images/bg1.png" class="headImg">
+                    <div class="boxText">张三</div>
+                    <div class="boxText">3215212</div>
+                    <div class="boxText">xx戒毒所</div>
+                </div>
+                <div class="box-area">
+                    <img src="images/border2.png" class="borderBox">
+                    <img src="images/bg1.png" class="headImg">
+                    <div class="boxText">张三</div>
+                    <div class="boxText">3215212</div>
+                    <div class="boxText">xx戒毒所</div>
+                </div>
+            </div>
+        </div>
+        <div class="solidDiv " style="margin-top: 2%;">
+            <div class="boxPoint" id="point2"></div>
+            <img class="kuang" src="images/kuang.png">
+            <div class="title">报警统计</div>
+            <div class="sumTitle" style="z-index: 999999999;position: absolute;right: 1em">
+                <span class="province echartType" data-type="1">全省</span>
+                <span class="proBox echartType" data-type="0">戒毒所</span>
+            </div>
+            <div id="smothTable">
+
+            </div>
+        </div>
+        <div class="solidDiv " style="height: 28%;margin-top: 2%; width: 70%">
+            <div class="boxPoint" id="point3" style="bottom: 0"></div>
+            <img class="kuang" src="images/kuang.png" style="height: 100%;top:0">
+            <div class="title">设备情况</div>
+            <div class="flexbox">
+                <div class="pouusd">
+                    <div class="ptitle">视频</div>
+                    <svg id="gauge" class="svgBg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80"
+                        style="enable-background:new 0 0 80 80;" xml:space="preserve">
+                        <image xlink:href="images/oCircle.png" width="90" height="80" x="6" y="1" />
+                        <path style="fill: #11c0f3;"
+                            d="M12.9,75.5c0.3,0.5,0.7,0.9,1,1.4l7.6-5.7c-0.3-0.4-0.5-0.7-0.8-1.1L12.9,75.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M9.3,69.3c0.3,0.5,0.5,1,0.8,1.5l8.4-4.4c-0.2-0.4-0.4-0.8-0.6-1.2L9.3,69.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M6.7,62.4C6.9,62.9,7,63.5,7.2,64l9.1-3c-0.1-0.4-0.3-0.8-0.4-1.2L6.7,62.4z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5.3,55.2c0,0.6,0.1,1.1,0.2,1.7l9.4-1.5c-0.1-0.4-0.1-0.9-0.2-1.3L5.3,55.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5,47.9c0,0.6,0,1.1,0,1.7l9.5,0.1c0-0.5,0-0.9,0-1.4L5,47.9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5.9,40.7c-0.1,0.6-0.2,1.1-0.3,1.7L15,44c0.1-0.4,0.2-0.9,0.2-1.3L5.9,40.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M8,33.7c-0.2,0.5-0.4,1.1-0.6,1.6l9,3.1c0.1-0.4,0.3-0.9,0.5-1.3L8,33.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M11.2,27.1c-0.3,0.5-0.5,1-0.8,1.5l8.3,4.6c0.2-0.4,0.4-0.8,0.7-1.2L11.2,27.1z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M15.5,21.2c-0.4,0.4-0.8,0.9-1.1,1.3l7.5,5.8c0.3-0.4,0.6-0.7,0.9-1.1L15.5,21.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M20.6,16c-0.5,0.3-0.9,0.7-1.3,1.1l6.5,7c0.3-0.3,0.6-0.6,1-0.9L20.6,16z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M26.4,11.7c-0.5,0.3-0.9,0.6-1.4,0.9l5.3,7.9c0.3-0.2,0.7-0.5,1-0.7L26.4,11.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M33,8.3c-0.6,0.2-1.1,0.5-1.6,0.7l3.9,8.7c0.4-0.2,0.9-0.4,1.3-0.6L33,8.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M39.9,6.1c-0.5,0.1-1.1,0.3-1.6,0.4l2.5,9.2c0.4-0.1,0.8-0.2,1.2-0.3L39.9,6.1z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M47.2,5.2c-0.6,0-1.1,0-1.7,0.1l0.9,9.4c0.4,0,0.9-0.1,1.3-0.1L47.2,5.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M54.5,5.2c-0.6,0-1.1-0.1-1.7-0.1l-0.6,9.5c0.4,0,0.9,0.1,1.3,0.1L54.5,5.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M61.6,6.5c-0.5-0.1-1.1-0.3-1.6-0.4l-2.2,9.3c0.4,0.1,0.9,0.2,1.3,0.3L61.6,6.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M68.6,9C68,8.7,67.5,8.5,67,8.3l-3.6,8.8c0.4,0.2,0.8,0.3,1.2,0.5L68.6,9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M74.9,12.5c-0.4-0.3-0.9-0.6-1.4-0.9l-5,8.1c0.4,0.2,0.7,0.5,1.1,0.7L74.9,12.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M80.6,17c-0.5-0.4-0.9-0.7-1.3-1.1l-6.2,7.2c0.3,0.3,0.7,0.6,1,0.9L80.6,17z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M85.7,22.4c-0.4-0.4-0.7-0.9-1.1-1.3l-7.4,6.1c0.3,0.3,0.5,0.7,0.8,1L85.7,22.4z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M89.6,28.6c-0.2-0.5-0.5-1-0.8-1.5L80.6,32c0.2,0.4,0.4,0.7,0.6,1.1L89.6,28.6z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M92.5,35.3c-0.2-0.5-0.4-1.1-0.6-1.6l-8.8,3.4c0.2,0.4,0.3,0.8,0.5,1.2L92.5,35.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M94.4,42.2c-0.1-0.5-0.2-1.1-0.3-1.6l-9.4,2c0.1,0.4,0.2,0.9,0.2,1.3L94.4,42.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M95,47.8l-9.5,0.5c0,0.4,0,0.9,0,1.3l9.5-0.1C95,48.9,95,48.4,95,47.8z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M94.5,56.8c0.1-0.5,0.1-1.1,0.2-1.7l-9.4-1c-0.1,0.4-0.1,0.9-0.2,1.3L94.5,56.8z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M92.8,63.9c0.2-0.5,0.3-1,0.5-1.7l-9.1-2.6c-0.1,0.4-0.3,0.9-0.4,1.3L92.8,63.9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M90,70.7c0.2-0.5,0.5-1,0.8-1.5l-8.7-4.1c-0.2,0.4-0.4,0.8-0.6,1.2L90,70.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M89.9,80.1c0.5-0.7,1-1.3,1.4-1.9l-12-8.2c-0.3,0.4-0.6,0.9-0.9,1.3L89.9,80.1z" />
+                    </svg>
+                    <div class="numste">20%</div>
+                    <div class="boxText">总数2000</div>
+                    <div class="boxText">毁坏数250</div>
+                </div>
+                <div class="pouusd">
+                    <div class="ptitle">门禁</div>
+                    <svg id="gauge1" class="svgBg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80"
+                        style="enable-background:new 0 0 80 80;" xml:space="preserve">
+                        <image xlink:href="images/oCircle.png" width="90" height="80" x="6" y="1" />
+                        <path style="fill: #11c0f3;"
+                            d="M12.9,75.5c0.3,0.5,0.7,0.9,1,1.4l7.6-5.7c-0.3-0.4-0.5-0.7-0.8-1.1L12.9,75.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M9.3,69.3c0.3,0.5,0.5,1,0.8,1.5l8.4-4.4c-0.2-0.4-0.4-0.8-0.6-1.2L9.3,69.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M6.7,62.4C6.9,62.9,7,63.5,7.2,64l9.1-3c-0.1-0.4-0.3-0.8-0.4-1.2L6.7,62.4z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5.3,55.2c0,0.6,0.1,1.1,0.2,1.7l9.4-1.5c-0.1-0.4-0.1-0.9-0.2-1.3L5.3,55.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5,47.9c0,0.6,0,1.1,0,1.7l9.5,0.1c0-0.5,0-0.9,0-1.4L5,47.9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5.9,40.7c-0.1,0.6-0.2,1.1-0.3,1.7L15,44c0.1-0.4,0.2-0.9,0.2-1.3L5.9,40.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M8,33.7c-0.2,0.5-0.4,1.1-0.6,1.6l9,3.1c0.1-0.4,0.3-0.9,0.5-1.3L8,33.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M11.2,27.1c-0.3,0.5-0.5,1-0.8,1.5l8.3,4.6c0.2-0.4,0.4-0.8,0.7-1.2L11.2,27.1z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M15.5,21.2c-0.4,0.4-0.8,0.9-1.1,1.3l7.5,5.8c0.3-0.4,0.6-0.7,0.9-1.1L15.5,21.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M20.6,16c-0.5,0.3-0.9,0.7-1.3,1.1l6.5,7c0.3-0.3,0.6-0.6,1-0.9L20.6,16z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M26.4,11.7c-0.5,0.3-0.9,0.6-1.4,0.9l5.3,7.9c0.3-0.2,0.7-0.5,1-0.7L26.4,11.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M33,8.3c-0.6,0.2-1.1,0.5-1.6,0.7l3.9,8.7c0.4-0.2,0.9-0.4,1.3-0.6L33,8.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M39.9,6.1c-0.5,0.1-1.1,0.3-1.6,0.4l2.5,9.2c0.4-0.1,0.8-0.2,1.2-0.3L39.9,6.1z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M47.2,5.2c-0.6,0-1.1,0-1.7,0.1l0.9,9.4c0.4,0,0.9-0.1,1.3-0.1L47.2,5.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M54.5,5.2c-0.6,0-1.1-0.1-1.7-0.1l-0.6,9.5c0.4,0,0.9,0.1,1.3,0.1L54.5,5.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M61.6,6.5c-0.5-0.1-1.1-0.3-1.6-0.4l-2.2,9.3c0.4,0.1,0.9,0.2,1.3,0.3L61.6,6.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M68.6,9C68,8.7,67.5,8.5,67,8.3l-3.6,8.8c0.4,0.2,0.8,0.3,1.2,0.5L68.6,9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M74.9,12.5c-0.4-0.3-0.9-0.6-1.4-0.9l-5,8.1c0.4,0.2,0.7,0.5,1.1,0.7L74.9,12.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M80.6,17c-0.5-0.4-0.9-0.7-1.3-1.1l-6.2,7.2c0.3,0.3,0.7,0.6,1,0.9L80.6,17z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M85.7,22.4c-0.4-0.4-0.7-0.9-1.1-1.3l-7.4,6.1c0.3,0.3,0.5,0.7,0.8,1L85.7,22.4z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M89.6,28.6c-0.2-0.5-0.5-1-0.8-1.5L80.6,32c0.2,0.4,0.4,0.7,0.6,1.1L89.6,28.6z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M92.5,35.3c-0.2-0.5-0.4-1.1-0.6-1.6l-8.8,3.4c0.2,0.4,0.3,0.8,0.5,1.2L92.5,35.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M94.4,42.2c-0.1-0.5-0.2-1.1-0.3-1.6l-9.4,2c0.1,0.4,0.2,0.9,0.2,1.3L94.4,42.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M95,47.8l-9.5,0.5c0,0.4,0,0.9,0,1.3l9.5-0.1C95,48.9,95,48.4,95,47.8z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M94.5,56.8c0.1-0.5,0.1-1.1,0.2-1.7l-9.4-1c-0.1,0.4-0.1,0.9-0.2,1.3L94.5,56.8z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M92.8,63.9c0.2-0.5,0.3-1,0.5-1.7l-9.1-2.6c-0.1,0.4-0.3,0.9-0.4,1.3L92.8,63.9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M90,70.7c0.2-0.5,0.5-1,0.8-1.5l-8.7-4.1c-0.2,0.4-0.4,0.8-0.6,1.2L90,70.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M89.9,80.1c0.5-0.7,1-1.3,1.4-1.9l-12-8.2c-0.3,0.4-0.6,0.9-0.9,1.3L89.9,80.1z" />
+                    </svg>
+                    <div class="numste">20%</div>
+                    <div class="boxText">总数2000</div>
+                    <div class="boxText">毁坏数250</div>
+                </div>
+                <div class="pouusd">
+                    <div class="ptitle">对讲</div>
+                    <svg id="gauge2" class="svgBg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80"
+                        style="enable-background:new 0 0 80 80;" xml:space="preserve">
+                        <image xlink:href="images/oCircle.png" width="90" height="80" x="6" y="1" />
+                        <path style="fill: #11c0f3;"
+                            d="M12.9,75.5c0.3,0.5,0.7,0.9,1,1.4l7.6-5.7c-0.3-0.4-0.5-0.7-0.8-1.1L12.9,75.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M9.3,69.3c0.3,0.5,0.5,1,0.8,1.5l8.4-4.4c-0.2-0.4-0.4-0.8-0.6-1.2L9.3,69.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M6.7,62.4C6.9,62.9,7,63.5,7.2,64l9.1-3c-0.1-0.4-0.3-0.8-0.4-1.2L6.7,62.4z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5.3,55.2c0,0.6,0.1,1.1,0.2,1.7l9.4-1.5c-0.1-0.4-0.1-0.9-0.2-1.3L5.3,55.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5,47.9c0,0.6,0,1.1,0,1.7l9.5,0.1c0-0.5,0-0.9,0-1.4L5,47.9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5.9,40.7c-0.1,0.6-0.2,1.1-0.3,1.7L15,44c0.1-0.4,0.2-0.9,0.2-1.3L5.9,40.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M8,33.7c-0.2,0.5-0.4,1.1-0.6,1.6l9,3.1c0.1-0.4,0.3-0.9,0.5-1.3L8,33.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M11.2,27.1c-0.3,0.5-0.5,1-0.8,1.5l8.3,4.6c0.2-0.4,0.4-0.8,0.7-1.2L11.2,27.1z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M15.5,21.2c-0.4,0.4-0.8,0.9-1.1,1.3l7.5,5.8c0.3-0.4,0.6-0.7,0.9-1.1L15.5,21.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M20.6,16c-0.5,0.3-0.9,0.7-1.3,1.1l6.5,7c0.3-0.3,0.6-0.6,1-0.9L20.6,16z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M26.4,11.7c-0.5,0.3-0.9,0.6-1.4,0.9l5.3,7.9c0.3-0.2,0.7-0.5,1-0.7L26.4,11.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M33,8.3c-0.6,0.2-1.1,0.5-1.6,0.7l3.9,8.7c0.4-0.2,0.9-0.4,1.3-0.6L33,8.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M39.9,6.1c-0.5,0.1-1.1,0.3-1.6,0.4l2.5,9.2c0.4-0.1,0.8-0.2,1.2-0.3L39.9,6.1z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M47.2,5.2c-0.6,0-1.1,0-1.7,0.1l0.9,9.4c0.4,0,0.9-0.1,1.3-0.1L47.2,5.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M54.5,5.2c-0.6,0-1.1-0.1-1.7-0.1l-0.6,9.5c0.4,0,0.9,0.1,1.3,0.1L54.5,5.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M61.6,6.5c-0.5-0.1-1.1-0.3-1.6-0.4l-2.2,9.3c0.4,0.1,0.9,0.2,1.3,0.3L61.6,6.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M68.6,9C68,8.7,67.5,8.5,67,8.3l-3.6,8.8c0.4,0.2,0.8,0.3,1.2,0.5L68.6,9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M74.9,12.5c-0.4-0.3-0.9-0.6-1.4-0.9l-5,8.1c0.4,0.2,0.7,0.5,1.1,0.7L74.9,12.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M80.6,17c-0.5-0.4-0.9-0.7-1.3-1.1l-6.2,7.2c0.3,0.3,0.7,0.6,1,0.9L80.6,17z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M85.7,22.4c-0.4-0.4-0.7-0.9-1.1-1.3l-7.4,6.1c0.3,0.3,0.5,0.7,0.8,1L85.7,22.4z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M89.6,28.6c-0.2-0.5-0.5-1-0.8-1.5L80.6,32c0.2,0.4,0.4,0.7,0.6,1.1L89.6,28.6z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M92.5,35.3c-0.2-0.5-0.4-1.1-0.6-1.6l-8.8,3.4c0.2,0.4,0.3,0.8,0.5,1.2L92.5,35.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M94.4,42.2c-0.1-0.5-0.2-1.1-0.3-1.6l-9.4,2c0.1,0.4,0.2,0.9,0.2,1.3L94.4,42.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M95,47.8l-9.5,0.5c0,0.4,0,0.9,0,1.3l9.5-0.1C95,48.9,95,48.4,95,47.8z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M94.5,56.8c0.1-0.5,0.1-1.1,0.2-1.7l-9.4-1c-0.1,0.4-0.1,0.9-0.2,1.3L94.5,56.8z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M92.8,63.9c0.2-0.5,0.3-1,0.5-1.7l-9.1-2.6c-0.1,0.4-0.3,0.9-0.4,1.3L92.8,63.9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M90,70.7c0.2-0.5,0.5-1,0.8-1.5l-8.7-4.1c-0.2,0.4-0.4,0.8-0.6,1.2L90,70.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M89.9,80.1c0.5-0.7,1-1.3,1.4-1.9l-12-8.2c-0.3,0.4-0.6,0.9-0.9,1.3L89.9,80.1z" />
+                    </svg>
+                    <div class="numste">20%</div>
+                    <div class="boxText">总数2000</div>
+                    <div class="boxText">毁坏数250</div>
+                </div>
+                <div class="pouusd">
+                    <div class="ptitle">广播</div>
+                    <svg id="gauge3" class="svgBg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80"
+                        style="enable-background:new 0 0 80 80;" xml:space="preserve">
+                        <image xlink:href="images/oCircle.png" width="90" height="80" x="6" y="1" />
+                        <path style="fill: #11c0f3;"
+                            d="M12.9,75.5c0.3,0.5,0.7,0.9,1,1.4l7.6-5.7c-0.3-0.4-0.5-0.7-0.8-1.1L12.9,75.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M9.3,69.3c0.3,0.5,0.5,1,0.8,1.5l8.4-4.4c-0.2-0.4-0.4-0.8-0.6-1.2L9.3,69.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M6.7,62.4C6.9,62.9,7,63.5,7.2,64l9.1-3c-0.1-0.4-0.3-0.8-0.4-1.2L6.7,62.4z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5.3,55.2c0,0.6,0.1,1.1,0.2,1.7l9.4-1.5c-0.1-0.4-0.1-0.9-0.2-1.3L5.3,55.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5,47.9c0,0.6,0,1.1,0,1.7l9.5,0.1c0-0.5,0-0.9,0-1.4L5,47.9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5.9,40.7c-0.1,0.6-0.2,1.1-0.3,1.7L15,44c0.1-0.4,0.2-0.9,0.2-1.3L5.9,40.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M8,33.7c-0.2,0.5-0.4,1.1-0.6,1.6l9,3.1c0.1-0.4,0.3-0.9,0.5-1.3L8,33.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M11.2,27.1c-0.3,0.5-0.5,1-0.8,1.5l8.3,4.6c0.2-0.4,0.4-0.8,0.7-1.2L11.2,27.1z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M15.5,21.2c-0.4,0.4-0.8,0.9-1.1,1.3l7.5,5.8c0.3-0.4,0.6-0.7,0.9-1.1L15.5,21.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M20.6,16c-0.5,0.3-0.9,0.7-1.3,1.1l6.5,7c0.3-0.3,0.6-0.6,1-0.9L20.6,16z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M26.4,11.7c-0.5,0.3-0.9,0.6-1.4,0.9l5.3,7.9c0.3-0.2,0.7-0.5,1-0.7L26.4,11.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M33,8.3c-0.6,0.2-1.1,0.5-1.6,0.7l3.9,8.7c0.4-0.2,0.9-0.4,1.3-0.6L33,8.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M39.9,6.1c-0.5,0.1-1.1,0.3-1.6,0.4l2.5,9.2c0.4-0.1,0.8-0.2,1.2-0.3L39.9,6.1z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M47.2,5.2c-0.6,0-1.1,0-1.7,0.1l0.9,9.4c0.4,0,0.9-0.1,1.3-0.1L47.2,5.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M54.5,5.2c-0.6,0-1.1-0.1-1.7-0.1l-0.6,9.5c0.4,0,0.9,0.1,1.3,0.1L54.5,5.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M61.6,6.5c-0.5-0.1-1.1-0.3-1.6-0.4l-2.2,9.3c0.4,0.1,0.9,0.2,1.3,0.3L61.6,6.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M68.6,9C68,8.7,67.5,8.5,67,8.3l-3.6,8.8c0.4,0.2,0.8,0.3,1.2,0.5L68.6,9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M74.9,12.5c-0.4-0.3-0.9-0.6-1.4-0.9l-5,8.1c0.4,0.2,0.7,0.5,1.1,0.7L74.9,12.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M80.6,17c-0.5-0.4-0.9-0.7-1.3-1.1l-6.2,7.2c0.3,0.3,0.7,0.6,1,0.9L80.6,17z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M85.7,22.4c-0.4-0.4-0.7-0.9-1.1-1.3l-7.4,6.1c0.3,0.3,0.5,0.7,0.8,1L85.7,22.4z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M89.6,28.6c-0.2-0.5-0.5-1-0.8-1.5L80.6,32c0.2,0.4,0.4,0.7,0.6,1.1L89.6,28.6z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M92.5,35.3c-0.2-0.5-0.4-1.1-0.6-1.6l-8.8,3.4c0.2,0.4,0.3,0.8,0.5,1.2L92.5,35.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M94.4,42.2c-0.1-0.5-0.2-1.1-0.3-1.6l-9.4,2c0.1,0.4,0.2,0.9,0.2,1.3L94.4,42.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M95,47.8l-9.5,0.5c0,0.4,0,0.9,0,1.3l9.5-0.1C95,48.9,95,48.4,95,47.8z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M94.5,56.8c0.1-0.5,0.1-1.1,0.2-1.7l-9.4-1c-0.1,0.4-0.1,0.9-0.2,1.3L94.5,56.8z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M92.8,63.9c0.2-0.5,0.3-1,0.5-1.7l-9.1-2.6c-0.1,0.4-0.3,0.9-0.4,1.3L92.8,63.9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M90,70.7c0.2-0.5,0.5-1,0.8-1.5l-8.7-4.1c-0.2,0.4-0.4,0.8-0.6,1.2L90,70.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M89.9,80.1c0.5-0.7,1-1.3,1.4-1.9l-12-8.2c-0.3,0.4-0.6,0.9-0.9,1.3L89.9,80.1z" />
+                    </svg>
+                    <div class="numste">20%</div>
+                    <div class="boxText">总数2000</div>
+                    <div class="boxText">毁坏数250</div>
+                </div>
+                <div class="pouusd">
+                    <div class="ptitle">警务通</div>
+                    <svg id="gauge4" class="svgBg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80"
+                        style="enable-background:new 0 0 80 80;" xml:space="preserve">
+                        <image xlink:href="images/oCircle.png" width="90" height="80" x="6" y="1" />
+                        <path style="fill: #11c0f3;"
+                            d="M12.9,75.5c0.3,0.5,0.7,0.9,1,1.4l7.6-5.7c-0.3-0.4-0.5-0.7-0.8-1.1L12.9,75.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M9.3,69.3c0.3,0.5,0.5,1,0.8,1.5l8.4-4.4c-0.2-0.4-0.4-0.8-0.6-1.2L9.3,69.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M6.7,62.4C6.9,62.9,7,63.5,7.2,64l9.1-3c-0.1-0.4-0.3-0.8-0.4-1.2L6.7,62.4z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5.3,55.2c0,0.6,0.1,1.1,0.2,1.7l9.4-1.5c-0.1-0.4-0.1-0.9-0.2-1.3L5.3,55.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5,47.9c0,0.6,0,1.1,0,1.7l9.5,0.1c0-0.5,0-0.9,0-1.4L5,47.9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5.9,40.7c-0.1,0.6-0.2,1.1-0.3,1.7L15,44c0.1-0.4,0.2-0.9,0.2-1.3L5.9,40.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M8,33.7c-0.2,0.5-0.4,1.1-0.6,1.6l9,3.1c0.1-0.4,0.3-0.9,0.5-1.3L8,33.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M11.2,27.1c-0.3,0.5-0.5,1-0.8,1.5l8.3,4.6c0.2-0.4,0.4-0.8,0.7-1.2L11.2,27.1z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M15.5,21.2c-0.4,0.4-0.8,0.9-1.1,1.3l7.5,5.8c0.3-0.4,0.6-0.7,0.9-1.1L15.5,21.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M20.6,16c-0.5,0.3-0.9,0.7-1.3,1.1l6.5,7c0.3-0.3,0.6-0.6,1-0.9L20.6,16z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M26.4,11.7c-0.5,0.3-0.9,0.6-1.4,0.9l5.3,7.9c0.3-0.2,0.7-0.5,1-0.7L26.4,11.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M33,8.3c-0.6,0.2-1.1,0.5-1.6,0.7l3.9,8.7c0.4-0.2,0.9-0.4,1.3-0.6L33,8.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M39.9,6.1c-0.5,0.1-1.1,0.3-1.6,0.4l2.5,9.2c0.4-0.1,0.8-0.2,1.2-0.3L39.9,6.1z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M47.2,5.2c-0.6,0-1.1,0-1.7,0.1l0.9,9.4c0.4,0,0.9-0.1,1.3-0.1L47.2,5.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M54.5,5.2c-0.6,0-1.1-0.1-1.7-0.1l-0.6,9.5c0.4,0,0.9,0.1,1.3,0.1L54.5,5.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M61.6,6.5c-0.5-0.1-1.1-0.3-1.6-0.4l-2.2,9.3c0.4,0.1,0.9,0.2,1.3,0.3L61.6,6.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M68.6,9C68,8.7,67.5,8.5,67,8.3l-3.6,8.8c0.4,0.2,0.8,0.3,1.2,0.5L68.6,9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M74.9,12.5c-0.4-0.3-0.9-0.6-1.4-0.9l-5,8.1c0.4,0.2,0.7,0.5,1.1,0.7L74.9,12.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M80.6,17c-0.5-0.4-0.9-0.7-1.3-1.1l-6.2,7.2c0.3,0.3,0.7,0.6,1,0.9L80.6,17z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M85.7,22.4c-0.4-0.4-0.7-0.9-1.1-1.3l-7.4,6.1c0.3,0.3,0.5,0.7,0.8,1L85.7,22.4z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M89.6,28.6c-0.2-0.5-0.5-1-0.8-1.5L80.6,32c0.2,0.4,0.4,0.7,0.6,1.1L89.6,28.6z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M92.5,35.3c-0.2-0.5-0.4-1.1-0.6-1.6l-8.8,3.4c0.2,0.4,0.3,0.8,0.5,1.2L92.5,35.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M94.4,42.2c-0.1-0.5-0.2-1.1-0.3-1.6l-9.4,2c0.1,0.4,0.2,0.9,0.2,1.3L94.4,42.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M95,47.8l-9.5,0.5c0,0.4,0,0.9,0,1.3l9.5-0.1C95,48.9,95,48.4,95,47.8z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M94.5,56.8c0.1-0.5,0.1-1.1,0.2-1.7l-9.4-1c-0.1,0.4-0.1,0.9-0.2,1.3L94.5,56.8z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M92.8,63.9c0.2-0.5,0.3-1,0.5-1.7l-9.1-2.6c-0.1,0.4-0.3,0.9-0.4,1.3L92.8,63.9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M90,70.7c0.2-0.5,0.5-1,0.8-1.5l-8.7-4.1c-0.2,0.4-0.4,0.8-0.6,1.2L90,70.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M89.9,80.1c0.5-0.7,1-1.3,1.4-1.9l-12-8.2c-0.3,0.4-0.6,0.9-0.9,1.3L89.9,80.1z" />
+                    </svg>
+                    <div class="numste">20%</div>
+                    <div class="boxText">总数2000</div>
+                    <div class="boxText">毁坏数250</div>
+                </div>
+                <div class="pouusd">
+                    <div class="ptitle">电子围栏</div>
+                    <svg id="gauge5" class="svgBg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80"
+                        style="enable-background:new 0 0 80 80;" xml:space="preserve">
+                        <image xlink:href="images/oCircle.png" width="90" height="80" x="6" y="1" />
+                        <path style="fill: #11c0f3;"
+                            d="M12.9,75.5c0.3,0.5,0.7,0.9,1,1.4l7.6-5.7c-0.3-0.4-0.5-0.7-0.8-1.1L12.9,75.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M9.3,69.3c0.3,0.5,0.5,1,0.8,1.5l8.4-4.4c-0.2-0.4-0.4-0.8-0.6-1.2L9.3,69.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M6.7,62.4C6.9,62.9,7,63.5,7.2,64l9.1-3c-0.1-0.4-0.3-0.8-0.4-1.2L6.7,62.4z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5.3,55.2c0,0.6,0.1,1.1,0.2,1.7l9.4-1.5c-0.1-0.4-0.1-0.9-0.2-1.3L5.3,55.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5,47.9c0,0.6,0,1.1,0,1.7l9.5,0.1c0-0.5,0-0.9,0-1.4L5,47.9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M5.9,40.7c-0.1,0.6-0.2,1.1-0.3,1.7L15,44c0.1-0.4,0.2-0.9,0.2-1.3L5.9,40.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M8,33.7c-0.2,0.5-0.4,1.1-0.6,1.6l9,3.1c0.1-0.4,0.3-0.9,0.5-1.3L8,33.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M11.2,27.1c-0.3,0.5-0.5,1-0.8,1.5l8.3,4.6c0.2-0.4,0.4-0.8,0.7-1.2L11.2,27.1z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M15.5,21.2c-0.4,0.4-0.8,0.9-1.1,1.3l7.5,5.8c0.3-0.4,0.6-0.7,0.9-1.1L15.5,21.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M20.6,16c-0.5,0.3-0.9,0.7-1.3,1.1l6.5,7c0.3-0.3,0.6-0.6,1-0.9L20.6,16z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M26.4,11.7c-0.5,0.3-0.9,0.6-1.4,0.9l5.3,7.9c0.3-0.2,0.7-0.5,1-0.7L26.4,11.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M33,8.3c-0.6,0.2-1.1,0.5-1.6,0.7l3.9,8.7c0.4-0.2,0.9-0.4,1.3-0.6L33,8.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M39.9,6.1c-0.5,0.1-1.1,0.3-1.6,0.4l2.5,9.2c0.4-0.1,0.8-0.2,1.2-0.3L39.9,6.1z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M47.2,5.2c-0.6,0-1.1,0-1.7,0.1l0.9,9.4c0.4,0,0.9-0.1,1.3-0.1L47.2,5.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M54.5,5.2c-0.6,0-1.1-0.1-1.7-0.1l-0.6,9.5c0.4,0,0.9,0.1,1.3,0.1L54.5,5.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M61.6,6.5c-0.5-0.1-1.1-0.3-1.6-0.4l-2.2,9.3c0.4,0.1,0.9,0.2,1.3,0.3L61.6,6.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M68.6,9C68,8.7,67.5,8.5,67,8.3l-3.6,8.8c0.4,0.2,0.8,0.3,1.2,0.5L68.6,9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M74.9,12.5c-0.4-0.3-0.9-0.6-1.4-0.9l-5,8.1c0.4,0.2,0.7,0.5,1.1,0.7L74.9,12.5z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M80.6,17c-0.5-0.4-0.9-0.7-1.3-1.1l-6.2,7.2c0.3,0.3,0.7,0.6,1,0.9L80.6,17z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M85.7,22.4c-0.4-0.4-0.7-0.9-1.1-1.3l-7.4,6.1c0.3,0.3,0.5,0.7,0.8,1L85.7,22.4z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M89.6,28.6c-0.2-0.5-0.5-1-0.8-1.5L80.6,32c0.2,0.4,0.4,0.7,0.6,1.1L89.6,28.6z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M92.5,35.3c-0.2-0.5-0.4-1.1-0.6-1.6l-8.8,3.4c0.2,0.4,0.3,0.8,0.5,1.2L92.5,35.3z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M94.4,42.2c-0.1-0.5-0.2-1.1-0.3-1.6l-9.4,2c0.1,0.4,0.2,0.9,0.2,1.3L94.4,42.2z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M95,47.8l-9.5,0.5c0,0.4,0,0.9,0,1.3l9.5-0.1C95,48.9,95,48.4,95,47.8z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M94.5,56.8c0.1-0.5,0.1-1.1,0.2-1.7l-9.4-1c-0.1,0.4-0.1,0.9-0.2,1.3L94.5,56.8z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M92.8,63.9c0.2-0.5,0.3-1,0.5-1.7l-9.1-2.6c-0.1,0.4-0.3,0.9-0.4,1.3L92.8,63.9z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M90,70.7c0.2-0.5,0.5-1,0.8-1.5l-8.7-4.1c-0.2,0.4-0.4,0.8-0.6,1.2L90,70.7z" />
+                        <path style="fill: #11c0f3; display: none;"
+                            d="M89.9,80.1c0.5-0.7,1-1.3,1.4-1.9l-12-8.2c-0.3,0.4-0.6,0.9-0.9,1.3L89.9,80.1z" />
+                    </svg>
+                    <div class="numste">20%</div>
+                    <div class="boxText">总数2000</div>
+                    <div class="boxText">毁坏数250</div>
+                </div>
+            </div>
+        </div>
+        <div class="solidDiv " style="position: fixed;right: 3%;top: 10%;width: 22%;height: 29%;">
+            <div class="boxPoint" id="point4"></div>
+            <img class="kuang" src="images/kuang.png">
+            <div class="title">值班警察</div>
+            <div class="flexbox" style="padding-top: 0">
+                <div class="box-area">
+                    <div class="boxText">值班主任</div>
+                    <img class="borderBox newBorderBox" src="images/border2.png">
+                    <img class="headImg newHeadImg" src="images/bg1.png">
+                    <div class="boxText">张三</div>
+                    <div class="boxText">警号:3215212</div>
+                </div>
+                <div class="box-area">
+                    <div class="boxText">值班主任</div>
+                    <img src="images/border2.png" class="borderBox newBorderBox">
+                    <img src="images/bg1.png" class="headImg newHeadImg">
+                    <div class="boxText">张三</div>
+                    <div class="boxText">警号:3215212</div>
+                </div>
+            </div>
+        </div>
+        <div class="solidDiv " style="position: absolute;right: 3%;top: 43%;width: 22%;height:25%;">
+            <div class="boxPoint" id="point5"></div>
+            <img class="kuang" src="images/kuang.png">
+            <div class="title">外来人员，车辆</div>
+            <div class="otherQW">
+                <div class="name">外来人员</div>
+                <div class="num">152人</div>
+            </div>
+            <div class="otherQW">
+                <div class="name">外来车辆</div>
+                <div class="num">325辆</div>
+            </div>
+        </div>
+        <div class="solidDiv " style="position: fixed;right: 3%;top: 72%;width: 25%;height:26%">
+            <div class="boxPoint" id="point6"></div>
+            <img class="kuang" src="images/kuang.png">
+            <div class="title" style="height: 2em">报警信息</div>
+            <div class="flexbox bflex" style="height: 1.5em;line-height: 1.5em">
+                <div class="btitle">报警时间</div>
+                <div class="btitle">单位</div>
+                <div class="btitle">报警等级</div>
+                <div class="btitle">出发原因</div>
+            </div>
+            <div id="listBox" style="height: 75%;overflow: hidden;">
+                <div id="list">
+                    <div class="flexbox bflex">
+                        <div class="ctitle">2019-09-12</div>
+                        <div class="ctitle">戒毒所</div>
+                        <div class="ctitle">一級</div>
+                        <div class="ctitle">手動報警</div>
+                    </div>
+                    <div class="flexbox bflex">
+                        <div class="ctitle">2019-09-12</div>
+                        <div class="ctitle">戒毒所</div>
+                        <div class="ctitle">一級</div>
+                        <div class="ctitle">手動報警</div>
+                    </div>
+                    <div class="flexbox bflex">
+                        <div class="ctitle">2019-09-12</div>
+                        <div class="ctitle">戒毒所</div>
+                        <div class="ctitle">一級</div>
+                        <div class="ctitle">手動報警</div>
+                    </div>
+                    <div class="flexbox bflex">
+                        <div class="ctitle">2019-09-12</div>
+                        <div class="ctitle">戒毒所</div>
+                        <div class="ctitle">一級</div>
+                        <div class="ctitle">手動報警</div>
+                    </div>
+                    <div class="flexbox bflex">
+                        <div class="ctitle">2019-09-12</div>
+                        <div class="ctitle">戒毒所</div>
+                        <div class="ctitle">一級</div>
+                        <div class="ctitle">手動報警</div>
+                    </div>
+                </div>
+                <div id="listBox1"></div>
+            </div>
+
+        </div>
+        <div class="ban1Line fujianInfo">
+            <div class="ban1Line1 ban"><img src="images/banner_07.png"></div>
+            <div class="ban1Line2 ban"><img src="images/banner_10.png"></div>
+            <div class="ban1Line3 ban"><img src="images/banner_15.png"></div>
+        </div>
+        <div id="showInfo" class="solidDiv fujianInfo"
+            style="position: absolute;left: 58%;top: 24%;width: 8%;height:30%;padding-top: 2em">
+            <img class="kuang" src="images/kuang.png" style="height: 100%;top:0">
+            <div class="boxPoint" id="point7" style="bottom: 0"></div>
+            <div class="ztitle">犯罪动态</div>
+            <div class="commonTit">
+                <span class="moreT">在&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;册</span>
+                <span class="moreT changeMT">1000</span>
+            </div>
+            <div class="commonTit">
+                <span class="moreT">在&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;押</span>
+                <span class="moreT changeMT">1000</span>
+            </div>
+            <div class="commonTit">
+                <span class="moreT">今日收押</span>
+                <span class="moreT changeMT">0</span>
+            </div>
+            <div class="commonTit">
+                <span class="moreT">今日释放</span>
+                <span class="moreT changeMT">0</span>
+            </div>
+            <div class="commonTit">
+                <span class="moreT">外出就医</span>
+                <span class="moreT changeMT">0</span>
+            </div>
+            <div class="commonTit">
+                <span class="moreT">监外执行</span>
+                <span class="moreT changeMT">1000</span>
+            </div>
+            <div class="commonTit">
+                <span class="moreT">解回再审</span>
+                <span class="moreT changeMT">1000</span>
+            </div>
+
+        </div>
+        <img src="images/bigWorth.png" class="bigWorth">
+<!--         
+        <section class="stage">
+            <figure class="ball">
+                <span class="shadow"></span>
+            </figure>
+        </section> -->
+        <div id="main" style="width: 30%;height:500px;position: absolute;z-index: 99999;top: 10%;left:27%"></div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/process.js"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/echarts.gl.js"></script>
+    <script type="text/javascript" src="js/fuJianMap.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script src="js/line.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".container").css("height", window.screen.availHeight - 125 + 'px');
+            //更新折线图
+            $(".echartType").bind('click', function () {
+                $(".echartType").each(function (idx, item) {
+                    item.style.color = "#fff";
+                })
+                $(this).css('color', '#53ecef');
+                var type = $(this).attr("data-type");
+                var array = type == "1" ? [0, 352, 100, 534, 95, 236] : [0, 100, 300, 200, 500, 245];
+                initEChart(array);
+            })
+            //初始化折线图
+            initEChart();
+            //初始化列表以偶定
+            var dome = document.getElementById("listBox");
+            var dome1 = document.getElementById("list");
+            var dome2 = document.getElementById("listBox1");
+            var speed = 50;//设置向上轮动的速度 
+            dome2.innerHTML = dome1.innerHTML;//复制节点 
+            function moveTop() {
+                if (dome1.offsetHeight - dome.scrollTop <= 0) {
+                    dome.scrollTop -= dome1.offsetHeight;
+                } else {
+                    dome.scrollTop++;
+                }
+            }
+            setInterval(moveTop, speed);
+            //福建地图
+            intiFuJianMap();
+
+            //点点点进度
+            let pointList = ["point1", "point2", "point3", "point4", "point5", "point6", "point7"];
+            for (var i = 0; i < pointList.length; i++) {
+                let item = $("#" + pointList[i]);
+                setInterval(function () {
+                    item.append("<div class='parallelogram'></div>");
+                    if (item.children().length >= 6) {
+                        item.empty();
+                    }
+                }, 500);
+            }
+        })
+
+    </script>
+</body>
+
+</html>

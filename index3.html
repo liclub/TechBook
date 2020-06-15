@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta id="viewport" name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common3.css?v=199402051">
+    <link rel="stylesheet" href="css/an-skill-bar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/s+.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+</head>
+
+<body>
+    <div class="container">
+        <img class="menuBtn" id="otherMenu" style="left: 4%;display: none;position: absolute;
+    top: 5%;z-index: 999999999;width: 30px;height: 20px;" src="images/img10.png" data-show="0">
+        <aside class="sidebar">
+            <div class="logoBox">
+                <img class="menuBtn" class="" src="images/img10.png" data-show="1">
+            </div>
+            <menu class="fl maxbox menu animated" id="menu">
+                <ul>
+                    <li><a class="cur" href="#jbxx"><b>指挥协调</b><i>&nbsp;</i><em>&nbsp;</em></a></li>
+                    <li><a href="#shgl"><b>视频督查</b><i>&nbsp;</i><em>&nbsp;</em></a></li>
+                    <li><a href="#xyxx"><b>信息管理</b><i>&nbsp;</i><em>&nbsp;</em></a></li>
+                    <li><a href="#sjgx"><b>安全复核</b><i>&nbsp;</i><em>&nbsp;</em></a></li>
+                    <li><a href="#xfsp"><b>应急处理</b><i>&nbsp;</i><em>&nbsp;</em></a></li>
+                    <li><a href="#xljk"><b>执勤备勤</b><i>&nbsp;</i><em>&nbsp;</em></a></li>
+                    <li><a href="#czfd"><b>证据管理</b><i>&nbsp;</i><em>&nbsp;</em></a></li>
+                </ul>
+            </menu>
+            <div class="sidebar_line_top"><img src="images/img01.png"></div>
+            <div class="sidebar_line_foot"><img src="images/img01.png"></div>
+            <div class="sidebar_line_right">&nbsp;</div>
+        </aside>
+        <canvas id="canvas" style="position: absolute;top:0"></canvas>
+        <div class="bigTitle">应急指挥调度平台</div>
+        <div class="solidDiv commonLeft" style="position: fixed;left:10%;top: 12%;width: 27%;height: 27%;">
+            <img class="kuang" src="images/kuang1.png">
+            <div class="boxPoint" id="point1"></div>
+            <div class="title">值班警察</div>
+            <div class="flexbox" style="padding-top: 0">
+                <div class="box-area">
+                    <div class="newboxText">值班主任</div>
+                    <img class="borderBox newBorderBox" src="images/border3.png">
+                    <img class="headImg newHeadImg" src="images/bg1.png">
+                    <div class="boxText">张三</div>
+                    <div class="boxText">警号:3215212</div>
+                </div>
+                <div class="box-area">
+                    <div class="newboxText">值班主任</div>
+                    <img src="images/border3.png" class="borderBox newBorderBox">
+                    <img src="images/bg1.png" class="headImg newHeadImg">
+                    <div class="boxText">张三</div>
+                    <div class="boxText">警号:3215212</div>
+                </div>
+            </div>
+        </div>
+        <div class="solidDiv solidDiv_1 commonAlone" style="margin-left: 40%;height: 27%;top:12%">
+            <div class="boxPoint" id="point2"></div>
+            <div class="title">重点人员</div>
+            <img class="kuang" src="images/kuang1.png">
+            <div class="flexbox" style="margin-top: 2.2em">
+                <div class="box-area">
+                    <img class="borderBox" src="images/border3.png" alt="">
+                    <img src="images/bg1.png" class="headImg">
+                    <div class="positionText">张三</div>
+                    <div class="boxText">XX戒毒所</div>
+                    <div class="boxText">3215212</div>
+                </div>
+                <div class="box-area">
+                    <img src="images/border3.png" class="borderBox">
+                    <img src="images/bg1.png" class="headImg">
+                    <div class="positionText">张三</div>
+                    <div class="boxText">XX戒毒所</div>
+                    <div class="boxText">3215212</div>
+                </div>
+                <div class="box-area">
+                    <img src="images/border3.png" class="borderBox">
+                    <img src="images/bg1.png" class="headImg">
+                    <div class="positionText">张三</div>
+                    <div class="boxText">XX戒毒所</div>
+                    <div class="boxText">3215212</div>
+                </div>
+            </div>
+        </div>
+        <div class="solidDiv commonRight" style="position: absolute;right: 3%;top: 12%;width: 27%;height:27%;">
+            <div class="boxPoint" id="point3"></div>
+            <img class="kuang" src="images/kuang1.png">
+            <div class="title" style="height: 2em">报警类型</div>
+            <div id="skill">
+                <div class="skillbar">
+                    <div class="filled" data-width="90%"></div>
+                    <span class="title">01</span>
+                    <span class="percent">90%</span>
+                </div>
+
+                <div class="skillbar">
+                    <span class="title"></i> 02</span>
+                    <span class="percent">75%</span>
+                    <div class="filled" data-width="75%"></div>
+                </div>
+
+                <div class="skillbar">
+                    <span class="title">03</span>
+                    <span class="percent">50%</span>
+                    <div class="filled" data-width="50%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="solidDiv commonRight" style="top: 42%;position: absolute;right:3%;width: 27%;">
+            <div class="boxPoint" id="point4"></div>
+            <img class="kuang" src="images/kuang1.png">
+            <div class="title">报警统计</div>
+            <div class="sumTitle" style="z-index: 999999999;position: absolute;right: 0">
+                <span class="province echartType" data-type="1">全省</span>
+                <span class="proBox echartType" data-type="0">戒毒所</span>
+            </div>
+            <div id="smothTable">
+
+            </div>
+        </div>
+        <div class="solidDiv commonLeft" style="height: 26%;width:57%;position: absolute;top:72%;left:10%">
+            <div class="boxPoint" id="point5"></div>
+            <img class="kuang" src="images/kuang1.png">
+            <div class="title">设备情况</div>
+            <div class="flexbox">
+                <div class="pouusd">
+                    <!-- <div class="ptitle">视频</div> -->
+                    <center><br>
+                        <div id="wave" class="wave"><span>60%</span><span>视频</span></div>
+                    </center>
+                    <!-- <div class="shuiqiu shuiEven">
+                        <div class="shuiqiucontent">
+                            <div class="shui shui1 shui1Even"></div>
+                            <div class="shui shui2 shui1Even"></div>
+                            <div class="shui shui3 shui1Even"></div>
+                            <div class="shui shui4 shui1Even"></div>
+                            <div class="shui shui5 shui1Even"></div>
+                            <div class="shui shui6 shui1Even"></div>
+                        </div>
+                    </div>
+                    <div class="numste">20%</div> -->
+                    <div class="boxText boxTextEven">总数:2000</div>
+                    <div class="boxText boxTextEven">毁坏数:250</div>
+                </div>
+                <div class="pouusd">
+                    <!-- <div class="ptitle">门禁</div> -->
+                    <center><br>
+                        <div id="wave1" class="wave wave1"><span>60%</span><span>门禁</span></div>
+                    </center>
+                    <!--  <div class="shuiqiu shuiOld">
+                        <div class="shuiqiucontent">
+                            <div class="shui shui1 shui1Old"></div>
+                            <div class="shui shui2 shui1Old"></div>
+                            <div class="shui shui3 shui1Old"></div>
+                            <div class="shui shui4 shui1Old"></div>
+                            <div class="shui shui5 shui1Old"></div>
+                            <div class="shui shui6 shui1Old"></div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="numste">20%</div> -->
+                    <div class="boxText boxTextOld">总数:2000</div>
+                    <div class="boxText boxTextOld">毁坏数:250</div>
+                </div>
+                <div class="pouusd">
+                    <center><br>
+                        <div id="wave2" class="wave"><span>60%</span><span>对讲</span></div>
+                    </center>
+                    <!-- <div class="ptitle">对讲</div>
+                    <div class="shuiqiu shuiEven">
+                        <div class="shuiqiucontent">
+                            <div class="shui shui1 shui1Even"></div>
+                            <div class="shui shui2 shui1Even"></div>
+                            <div class="shui shui3 shui1Even"></div>
+                            <div class="shui shui4 shui1Even"></div>
+                            <div class="shui shui5 shui1Even"></div>
+                            <div class="shui shui6 shui1Even"></div>
+                        </div>
+                    </div>
+                    <div class="numste">20%</div> -->
+                    <div class="boxText boxTextEven">总数:2000</div>
+                    <div class="boxText boxTextEven">毁坏数:250</div>
+                </div>
+                <div class="pouusd">
+                    <center><br>
+                        <div id="wave3" class="wave wave1"><span>60%</span><span>广播</span></div>
+                    </center>
+                    <!-- <div class="ptitle">广播</div>
+                    <div class="shuiqiu shuiOld">
+                        <div class="shuiqiucontent">
+                            <div class="shui shui1 shui1Old"></div>
+                            <div class="shui shui2 shui1Old"></div>
+                            <div class="shui shui3 shui1Old"></div>
+                            <div class="shui shui4 shui1Old"></div>
+                            <div class="shui shui5 shui1Old"></div>
+                            <div class="shui shui6 shui1Old"></div>
+                        </div>
+                    </div>
+                    <div class="numste">20%</div> -->
+                    <div class="boxText boxTextOld">总数:2000</div>
+                    <div class="boxText boxTextOld">毁坏数:250</div>
+                </div>
+                <div class="pouusd">
+                    <center><br>
+                        <div id="wave4" class="wave"><span>60%</span><span>警务通</span></div>
+                    </center>
+                    <!-- <div class="ptitle" style="left:42%">警务通</div>
+                    <div class="shuiqiu shuiEven">
+                        <div class="shuiqiucontent">
+                            <div class="shui shui1 shui1Even"></div>
+                            <div class="shui shui2 shui1Even"></div>
+                            <div class="shui shui3 shui1Even"></div>
+                            <div class="shui shui4 shui1Even"></div>
+                            <div class="shui shui5 shui1Even"></div>
+                            <div class="shui shui6 shui1Even"></div>
+                        </div>
+                    </div>
+                    <div class="numste">20%</div> -->
+                    <div class="boxText boxTextEven">总数:2000</div>
+                    <div class="boxText boxTextEven">毁坏数:250</div>
+                </div>
+                <div class="pouusd">
+                    <center><br>
+                        <div id="wave5" class="wave wave1"><span>60%</span><span>电子围栏</span></div>
+                    </center>
+                    <!-- <div class="ptitle" style="left:38%">电子围栏</div>
+                    <div class="shuiqiu shuiOld">
+                        <div class="shuiqiucontent">
+                            <div class="shui shui1 shui1Old"></div>
+                            <div class="shui shui2 shui1Old"></div>
+                            <div class="shui shui3 shui1Old"></div>
+                            <div class="shui shui4 shui1Old"></div>
+                            <div class="shui shui5 shui1Old"></div>
+                            <div class="shui shui6 shui1Old"></div>
+                        </div>
+                    </div>
+                    <div class="numste">20%</div> -->
+                    <div class="boxText boxTextOld">总数:2000</div>
+                    <div class="boxText boxTextOld">毁坏数:250</div>
+                </div>
+            </div>
+        </div>
+        <div class="solidDiv commonRight" style="position: fixed;right: 3%;top: 72%;width: 27%;height:26%">
+            <div class="boxPoint" id="point6"></div>
+            <img class="kuang" src="images/kuang1.png">
+            <div class="title" style="height: 2em">报警信息</div>
+            <div class="flexbox bflex" style="height: 1.5em;line-height: 1.5em">
+                <div class="btitle">报警时间</div>
+                <div class="btitle">单位</div>
+                <div class="btitle">报警等级</div>
+                <div class="btitle">出发原因</div>
+            </div>
+            <div id="listBox" style="height: 75%;overflow: hidden;">
+                <div id="list">
+                    <div class="flexbox bflex">
+                        <div class="ctitle">2019-09-12</div>
+                        <div class="ctitle">戒毒所</div>
+                        <div class="ctitle">一級</div>
+                        <div class="ctitle">手動報警</div>
+                    </div>
+                    <div class="flexbox bflex">
+                        <div class="ctitle">2019-09-12</div>
+                        <div class="ctitle">戒毒所</div>
+                        <div class="ctitle">一級</div>
+                        <div class="ctitle">手動報警</div>
+                    </div>
+                    <div class="flexbox bflex">
+                        <div class="ctitle">2019-09-12</div>
+                        <div class="ctitle">戒毒所</div>
+                        <div class="ctitle">一級</div>
+                        <div class="ctitle">手動報警</div>
+                    </div>
+                    <div class="flexbox bflex">
+                        <div class="ctitle">2019-09-12</div>
+                        <div class="ctitle">戒毒所</div>
+                        <div class="ctitle">一級</div>
+                        <div class="ctitle">手動報警</div>
+                    </div>
+                    <div class="flexbox bflex">
+                        <div class="ctitle">2019-09-12</div>
+                        <div class="ctitle">戒毒所</div>
+                        <div class="ctitle">一級</div>
+                        <div class="ctitle">手動報警</div>
+                    </div>
+                </div>
+                <div id="listBox1"></div>
+            </div>
+
+        </div>
+        <div class="ban1Line fujianInfo">
+            <div class="ban1Line1 ban"><img src="images/banner_07.png"></div>
+            <div class="ban1Line2 ban"><img src="images/banner_10.png"></div>
+            <div class="ban1Line3 ban"><img src="images/banner_15.png"></div>
+        </div>
+        <div id="showInfo" class="solidDiv fujianInfo" style="position: absolute;left: 52%;top: 43%;width: 8%;height:25%;">
+            <div class="boxPoint" id="point7"></div>
+            <img class="kuang" src="images/kuang1.png">
+            <div class="ztitle">犯罪动态</div>
+            <div class="commonTit">
+                <span class="moreT">在&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;册</span>
+                <span class="moreT changeMT">1000</span>
+            </div>
+            <div class="commonTit">
+                <span class="moreT">在&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;押</span>
+                <span class="moreT changeMT">1000</span>
+            </div>
+            <div class="commonTit">
+                <span class="moreT">今日收押</span>
+                <span class="moreT changeMT">0</span>
+            </div>
+            <div class="commonTit">
+                <span class="moreT">今日释放</span>
+                <span class="moreT changeMT">0</span>
+            </div>
+            <div class="commonTit">
+                <span class="moreT">外出就医</span>
+                <span class="moreT changeMT">0</span>
+            </div>
+            <div class="commonTit">
+                <span class="moreT">监外执行</span>
+                <span class="moreT changeMT">1000</span>
+            </div>
+            <div class="commonTit">
+                <span class="moreT">解回再审</span>
+                <span class="moreT changeMT">1000</span>
+            </div>
+
+        </div>
+        <div id="main" style="width: 30%;height:500px;position: absolute;z-index: 99999;top: 30%;left:20%"></div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/process.js"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/echarts.gl.js"></script>
+    <script type="text/javascript" src="js/fuJianMap.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/an-skill-bar.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".container").css("height", window.screen.availHeight - 125 + 'px');
+            //执行动画 animated.css
+            function executeAnim(c, x, f, s) {
+                var cn = c;
+                $('.' + c).removeClass().addClass(x + ' animated ' + c).one('webkitAnimationStart mozAnimationStart MSAnimationStart oanimationstart animationstart', function () {
+                }).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                    $(this).addClass(cn);
+                });
+            };
+            //绑定左侧tab
+            $(".menuBtn").bind("click", function () {
+                var show = $(this).attr("data-show");
+                if (show == "1") {
+                    executeAnim("sidebar", 'fadeOut')
+                    $("#otherMenu").show();
+                } else {
+                    executeAnim("sidebar", 'fadeIn');
+                    $("#otherMenu").hide();
+                }
+            });
+            //切换折线图
+            $(".echartType").bind('click', function () {
+                $(".echartType").each(function (idx, item) {
+                    item.style.color = "#fff";
+                })
+                $(this).css('color', '#ad80ff');
+                var type = $(this).attr("data-type");
+                var array = type == "1" ? [0, 352, 100, 534, 95, 236] : [0, 100, 300, 200, 500, 245];
+                initEChart(array, 'rgba(173, 128, 255');
+            })
+            //初始化折线图
+            initEChart('', 'rgba(173, 128, 255');
+            //列表更新
+            var dome = document.getElementById("listBox");
+            var dome1 = document.getElementById("list");
+            var dome2 = document.getElementById("listBox1");
+            var speed = 50;//设置向上轮动的速度 
+            dome2.innerHTML = dome1.innerHTML;//复制节点 
+            function moveTop() {
+                if (dome1.offsetHeight - dome.scrollTop <= 0) {
+                    dome.scrollTop -= dome1.offsetHeight;
+                } else {
+                    dome.scrollTop++;
+                }
+            }
+            setInterval(moveTop, speed);
+            //初始化福建地图
+            intiFuJianMap('#ff77ff', '#ff8eff');
+            initStart();
+            //波浪圆球
+            function wave(img, id) {
+                var ctx;
+                var waveImage;
+                var canvasWidth;
+                var canvasHeight;
+                var needAnimate = false;
+                var wave = document.getElementById(id);
+                var canvas = document.createElement('canvas');
+                if (!canvas.getContext) return;
+                ctx = canvas.getContext('2d');
+                canvasWidth = wave.offsetWidth;
+                canvasHeight = wave.offsetHeight;
+                canvas.setAttribute('width', canvasWidth);
+                canvas.setAttribute('height', canvasHeight);
+                wave.appendChild(canvas);
+                waveImage = new Image();
+                waveImage.onload = function () {
+                    waveImage.onload = null;
+                }
+                waveImage.src = img;
+                setTimeout(function () {
+                    animate(waveImage, ctx, canvasWidth, canvasHeight);
+                }, 500);
+            }
+            //波浪圆球动画
+            function animate(waveImage, ctx, canvasWidth, canvasHeight) {
+                var waveX = 0;
+                var waveY = 0;
+                var waveX_min = -203;
+                var waveY_max = canvasHeight * 0.7;
+                var requestAnimationFrame =
+                    window.requestAnimationFrame ||
+                    window.mozRequestAnimationFrame ||
+                    window.webkitRequestAnimationFrame ||
+                    window.msRequestAnimationFrame ||
+                    function (callback) { window.setTimeout(callback, 1000 / 60); };
+                function loop() {
+                    ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+                    if (waveY < waveY_max) waveY += 1.5;
+                    if (waveX < waveX_min) waveX = 0; else waveX -= 3;
+
+                    ctx.globalCompositeOperation = 'source-over';
+                    ctx.beginPath();
+                    ctx.arc(canvasWidth / 2, canvasHeight / 2, canvasHeight / 2, 0, Math.PI * 2, true);
+                    ctx.closePath();
+                    ctx.fill();
+
+                    ctx.globalCompositeOperation = 'source-in';
+                    ctx.drawImage(waveImage, waveX, canvasHeight - waveY);
+
+                    requestAnimationFrame(loop);
+                }
+                loop();
+            }
+            //创建波浪圆球
+            wave('images/wave1.png', 'wave');
+            wave('images/wave2.png', 'wave1');
+            wave('images/wave1.png', 'wave2');
+            wave('images/wave2.png', 'wave3');
+            wave('images/wave1.png', 'wave4');
+            wave('images/wave2.png', 'wave5');
+            //创建点点
+            let pointList = ["point1", "point2", "point3", "point4", "point5", "point6", "point7"];
+            for (var i = 0; i < pointList.length; i++) {
+                let item = $("#" + pointList[i]);
+                setInterval(function () {
+                    item.append("<div class='parallelogram'></div>");
+                    if (item.children().length >= 6) {
+                        item.empty();
+                    }
+                }, 500);
+            }
+        })
+    </script>
+</body>
+
+</html>

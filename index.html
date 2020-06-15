@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta id="viewport" name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css?v=199402051">
+</head>
+
+<body>
+    <!--代码雨区域-->
+    <!-- <canvas id="dmcanvas" style="background:#000;position: absolute;top: 0;left:0"></canvas> -->
+    <!-- <img class="bgImg" src="images/bg1.png"> -->
+    <video src="images/bg.mp4" loop autoplay preload muted style="position: absolute;width: 100%;height: 100%;"></video>
+    <div class="container" style="width: 100%">
+        <!-- <img src="images/worth.png" class="worth" id="wrothPic">
+        <img src="images/worthBorder.png" class="worthBorder">-->
+        <div class="des-title">应急指挥调度平台登录</div>
+        <div class="loginBox">
+            <div class="allrow">
+                <div class="leftRow"></div>
+                <div class="leftRow"></div>
+                <div class="leftRow"></div>
+                <div class="leftRow"></div>
+                <div class="leftRow"></div>
+            </div>
+            <div class="allrow1">
+                <div class="leftRow"></div>
+                <div class="leftRow"></div>
+                <div class="leftRow"></div>
+                <div class="leftRow"></div>
+                <div class="leftRow"></div>
+            </div>
+            <!-- <img class="leftTop" src="images/leftTop.png">
+            <img class="leftBottom" src="images/leftBottom.png">
+            <img class="rightBottom" src="images/rightBottom.png">
+            <img class="rightTop" src="images/rightTop.png"> -->
+            <!-- <div class="loginTitle" style="font-weight: 600">用户登录</div> -->
+            <div class="formBox">
+                <div class="inputBox">
+                    <img class="inputImg" src="images/user.png">
+                    <input type="text" placeholder="请输入登录ID">
+                </div>
+                <div class="inputBox">
+                    <img class="inputImg" src="images/password.png">
+                    <input type="password" placeholder="请输入密码">
+                </div>
+                <div class="loginBtn">登录</div>
+            </div>
+            <div class="login-other">
+                <div class="login-Deal" style="    text-align: right;width: 60%">
+                    <img src="images/check.png" data-check="1" class="remPwd" id="remPwd" style="display: none">
+                    <img src="images/notCheck.png" data-check="0" class="remPwd" id="notRemPwd">
+                    记住密码
+                </div>
+                <div class="login-Deal text-right debufWidth" style="width: 30%">忘记密码</div>
+            </div>
+        </div>
+        <svg class="svgPo_1" width="200" height="30" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#00e1eb" />
+                    <stop offset="80%" stop-color="#0c4282" />
+                    <stop offset="100%" stop-color="#cd68ac" />
+                </linearGradient>
+                <linearGradient id="linear1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#cd68ac" />
+                    <stop offset="80%" stop-color="#0c4282" />
+                    <stop offset="100%" stop-color="#00e1eb" />
+                </linearGradient>
+            </defs>
+            <path stroke="rgba(13,192,250,0.4)" fill="none" d="M 20 20 L 20 20 Q 50 50 80 80 Q 160 80 240 80 Q 250 70 260 60 Q 320 60 380 60 Q 390 50 400 40 Q 440 40 480 40 " />
+            <circle cx="182" cy="8" r="3" fill="rgba(13,192,250,0.4)">
+                <animate id="ani1" attributeName="fill-opacity" attributeType="XML" begin="0s;ani2.end" dur="1s" from="1"
+                    to="0.1" fill="freeze"></animate>
+                <animate id="ani2" attributeName="fill-opacity" attributeType="XML" begin="ani1.end" dur="1s" from="0.1"
+                    to="1" fill="freeze"></animate>
+            </circle>
+            <g fill="none" fill-rule="evenodd">
+                <path class="pathLine" stroke="rgba(33,229,238,0.2)" d="M 20 20 L 20 20 Q 50 50 80 80 Q 160 80 240 80 Q 250 70 260 60 Q 320 60 380 60 Q 390 50 400 40 Q 440 40 480 40 " />
+                <!-- <animate id="ani1" attributeName="stroke-opacity" attributeType="XML" begin="0s;ani2.end" dur="1s" from="1"
+                    to="0.4" fill="freeze"></animate>
+                <animate id="ani2" attributeName="stroke-opacity" attributeType="XML" begin="ani1.end" dur="1s" from="0.4"
+                    to="1" fill="freeze"></animate> -->
+            </g>
+        </svg>
+        <svg class="svgPo_2" width="200" height="30" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#00e1eb" />
+                    <stop offset="80%" stop-color="#0c4282" />
+                    <stop offset="100%" stop-color="#cd68ac" />
+                </linearGradient>
+                <linearGradient id="linear1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#cd68ac" />
+                    <stop offset="80%" stop-color="#0c4282" />
+                    <stop offset="100%" stop-color="#00e1eb" />
+                </linearGradient>
+            </defs>
+            <path stroke="rgba(13,192,250,0.4)" fill="none" d="M 20 80 L 60 40 L 200 40 L 220 60 L 380 60 " />
+            <circle cx="182" cy="8" r="3" fill="rgba(13,192,250,0.4)">
+                <animate id="ani1" attributeName="fill-opacity" attributeType="XML" begin="0s;ani2.end" dur="1s" from="1"
+                    to="0.1" fill="freeze"></animate>
+                <animate id="ani2" attributeName="fill-opacity" attributeType="XML" begin="ani1.end" dur="1s" from="0.1" to="1"
+                    fill="freeze"></animate>
+            </circle>
+            <g fill="none" fill-rule="evenodd">
+                <path class="pathLine" stroke="rgba(33,229,238,0.2)"
+                    d="M 20 80 L 60 40 L 200 40 L 220 60 L 380 60 " />
+                <!-- <animate id="ani1" attributeName="stroke-opacity" attributeType="XML" begin="0s;ani2.end" dur="1s" from="1"
+                            to="0.4" fill="freeze"></animate>
+                        <animate id="ani2" attributeName="stroke-opacity" attributeType="XML" begin="ani1.end" dur="1s" from="0.4"
+                            to="1" fill="freeze"></animate> -->
+            </g>
+        </svg>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".container").css("height", window.screen.availHeight - 125 + 'px');
+            
+            $(".remPwd").bind('click', function () {
+               var check = $(this).attr("data-check");
+               if(check == "1") {
+                $("#remPwd").hide();
+                $("#notRemPwd").show();
+               }else {
+                $("#remPwd").show();
+                $("#notRemPwd").hide();
+               }
+            })
+
+            setInterval(() => {
+                console.log(1)
+                var left = $(".allrow").get(0).style.marginLeft.replace("px","");
+                left = left=="" ? 1 : parseInt(left)+1;
+                left = left>=337? 1:left;
+                $(".allrow").css('marginLeft', left+'px' )
+            }, 100);
+             setInterval(() => {
+                console.log(1)
+                var left = $(".allrow1").get(0).style.marginLeft.replace("px", "");
+                left = left == "" ? 1 : parseInt(left) + 1;
+                left = left >= 337 ? 1 : left;
+                $(".allrow1").css('marginLeft', left + 'px')
+            }, 200);
+            // //背景构建
+            // var canvas = document.getElementById("dmcanvas");
+            // var context = canvas.getContext("2d");
+            // // 浏览器宽高
+            // var W = window.screen.availWidth;
+            // var H = window.screen.availHeight;
+            // canvas.width = W;
+            // canvas.height = H;
+            // var fontSize = 18;
+            // var colunms = Math.floor(W / fontSize);
+            // // 坐标
+            // var coordinate = [];
+            // for (var i = 0; i < colunms; i++) {
+            //     coordinate.push(0);
+            // }
+            // var str = "javascript html5 canvas";
+            // function draw() {
+            //     // 背景色
+            //     context.fillStyle = "rgba(0,0,0,0.05)";
+            //     context.fillRect(0, 0, W, H);
+            //     context.font = "800 " + fontSize + "px  宋体";
+            //     // 字体颜色
+            //     context.fillStyle = "rgba(1,251,245,0.3)";
+            //     for (var i = 0; i < colunms; i++) {
+            //         var index = Math.floor(Math.random() * str.length);
+            //         var x = i * fontSize;
+            //         var y = coordinate[i] * fontSize;
+            //         context.fillText(str[index], x, y);
+            //         if (y >= canvas.height && Math.random() > 0.88) {
+            //             coordinate[i] = 0;
+            //         }
+            //         coordinate[i]++;
+            //     }
+            // }
+
+            // function randColor() {
+            //     var r = Math.floor(Math.random() * 256);
+            //     var g = Math.floor(Math.random() * 256);
+            //     var b = Math.floor(Math.random() * 256);
+            //     return "rgb(" + r + "," + g + "," + b + ")";
+            // }
+
+            // draw();
+            // setInterval(draw, 50);
+            // //地球旋转
+            // let worth = document.getElementById("wrothPic");
+            // worth.I = 0;
+            // setInterval(function () {
+            //     worth.style.WebkitTransform = 'rotate(' + worth.I + 'deg)';
+            //     worth.style.MozTransform = 'rotate(' + worth.I + 'deg)';
+            //     worth.style.msTransform = 'rotate(' + worth.I + 'deg)';
+            //     worth.I += 1;
+            // }, 100);
+            var pathEls = document.getElementsByClassName('pathLine');
+            for (var i = 0; i < pathEls.length; i++) {
+                var pathEl = pathEls[i];
+                var offset = anime.setDashoffset(pathEl);
+                pathEl.setAttribute('stroke-dashoffset', offset);
+                anime({
+                    targets: pathEl,
+                    strokeDashoffset: [offset, 0],
+                    duration: anime.random(4000, 5000),
+                    delay: anime.random(0, 1000),
+                    loop: true,
+                    direction: '',
+                    easing: 'easeInOutSine',
+                    autoplay: true
+                });
+            }
+        })
+    </script>
+</body>
+
+</html>
